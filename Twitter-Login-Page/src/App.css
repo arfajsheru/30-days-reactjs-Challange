@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgba(0, 0, 0)
+}
+
+.logo-box{
+  background-color: #fff;
+  padding: 30px 120px;
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  text-align: center;
+  border-radius: 7px;
+}
+
+.logo {
+  width: 30px;
+  margin-bottom: 20px;
+}
+
+.logo-box h2{
+  margin-bottom: 20px;
+}
+
+.logo-box button{
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  border:1px solid #999;
+  border-radius: 32px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  cursor: pointer;
+
+}
+
+.logo-box button img {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.logo-box span {
+  display: block;
+  margin: auto;
+  width: 40px;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: -12px;
+}
+
+form input{
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #999;
+  padding: 15px 13px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+
+::placeholder {
+  font-weight: 500;
+  color: #999;
+}
+
+.form button{
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.logo-box p{
+  
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 40px 0;
+}
+
+.sign-up a {
+  font-size: 20px;
+  font-weight: 550;
+  margin-left: 91px;
+  transition: background-color 0.3s ease;
+}
+.sign-up a:hover{
+  color: #359cf0;
+}

@@ -1,0 +1,24 @@
+.form{
+  padding: 10px;
+}
+.container{
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  height: 100vh;
+}
+.centerTitle{
+  text-align: center;
+}
+
+
+.Button_container{
+  display: flex;
+  flex-direction: column;
+}
+.button-row{
+  margin: 10px;
+}
+.center{
+  text-align: center;
+}
