@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cornflowerblue;
+}
+
+
+.App{
+  padding: 40px;
+  height: 70vh;
+  width: 60vw;
+  background-color: rebeccapurple;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.item-container h1 {
+  text-align: center;
+  font-size: 44px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.age-information p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.items{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.left-col{
+  width: 30rem;
+  background-color: transparent;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
+  
+}
+
+.right-col{
+  width: 30rem;
+  background-color: #999;
+  padding: 20px;
+  border-radius: 5px;
+}
+.left-col input{
+  padding: 15px;
+  width: 70%;
+  margin-top: 30px;
+  border: 1px solid rgba(67, 67, 200, 0.833);
+  border: none;
+  background-color: aquamarine;
+  border-radius: 5px;
+}
+.button-container{
+  margin-top: 25px;
+  display: flex;
+  gap: 30px;
+  justify-content: left;
+}
+
+
+
+.button-container button {
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5;
+}
+.button-container button::before {
+  content: '';
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .button-container button:hover::before {
+  width: 9em;
+ }
+
+.right-col h1{
+  text-align: left;
+  font-size: 40px;
+}
+
+.show-age{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show-age h1{
+  margin-top: 30px;
+}
