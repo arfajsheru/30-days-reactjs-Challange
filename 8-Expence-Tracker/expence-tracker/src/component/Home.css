@@ -1,0 +1,347 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-container {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.balance-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.add-btn {
+  width: 80px;
+  padding: 0 10px;
+  background-color: yellow;
+  border: 0;
+  border-radius: 3px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  height: 30px;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #999;
+  padding: 10px;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.input-items {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-items input {
+  height: 35px;
+  outline: none;
+  border: none;
+  background-color: darksalmon;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border-radius: 2px;
+}
+
+.categaory {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.checked-btn {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.checked-btn label {
+  margin-left: 10px;
+}
+
+.add-btn-item {
+  height: 35px;
+  width: 50%;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+/* From Uiverse.io by faizanullah1999 */
+.primary-button {
+  font-family: "Ropa Sans", sans-serif;
+  /* font-family: 'Valorant', sans-serif; */
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  border: 1px solid #0e1822;
+  padding: 0.8rem 2.1rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 531.28 200'%3E%3Cdefs%3E%3Cstyle%3E .shape %7B fill: %23FF4655 /* fill: %230E1822; */ %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolygon class='shape' points='415.81 200 0 200 115.47 0 531.28 0 415.81 200' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-color: #0e1822;
+  background-size: 200%;
+  background-position: 200%;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  transition-property: background-position, border, color;
+  position: relative;
+  z-index: 1;
+}
+
+.primary-button:hover {
+  border: 1px solid #ff4655;
+  color: white;
+  background-position: 40%;
+}
+
+.primary-button:before {
+  content: "";
+  position: absolute;
+  background-color: #0e1822;
+  width: 0.2rem;
+  height: 0.2rem;
+  top: -1px;
+  left: -1px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.primary-button:hover:before {
+  background-color: white;
+}
+
+.primary-button:hover:after {
+  background-color: white;
+}
+
+.primary-button:after {
+  content: "";
+  position: absolute;
+  background-color: #ff4655;
+  width: 0.3rem;
+  height: 0.3rem;
+  bottom: -1px;
+  right: -1px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.button-borders {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.button-borders:before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 0.5em);
+  height: 50%;
+  left: -0.3em;
+  top: -0.3em;
+  border: 1px solid #0e1822;
+  border-bottom: 0px;
+  /* opacity: 0.3; */
+}
+
+.button-borders:after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 0.5em);
+  height: 50%;
+  left: -0.3em;
+  bottom: -0.3em;
+  border: 1px solid #0e1822;
+  border-top: 0px;
+  /* opacity: 0.3; */
+  z-index: 0;
+}
+
+.shape {
+  fill: #0e1822;
+}
+
+.type-containers {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.type-container {
+  border: 2px solid #999;
+  width: 40%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.type-title {
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+}
+.type-container:nth-of-type(1) .price {
+  color: red;
+}
+
+.type-container:nth-of-type(2) .price {
+  color: green;
+}
+
+.expence-transaction {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.expence-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.expence-top input {
+  height: 30px;
+  outline: none;
+  border-radius: 2px;
+  padding: 0px 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: normal;
+  color: blue;
+  background-color: #999;
+  width: 70%;
+  display: flex;
+}
+
+.transation-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 170px;
+  gap: 5px;
+  overflow-y: auto;
+}
+
+.transation-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 30px;
+  background-color: white;
+  color: black;
+  padding: 0 30px;
+  font-size: 14px;
+  display: flex;
+  font-weight: bold;
+  overflow: hidden;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+
+  border-radius: 10px;
+}
+
+/* Home.css */
+
+/* Fade-in and slide-down animation for the container */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale up animation for balance title */
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Slide-in from the left animation for transaction items */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animation to different elements */
+.home-container {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.balance-title {
+  animation: scaleUp 0.6s ease-in-out;
+}
+
+.transation-item {
+  animation: slideInLeft 0.8s ease-in-out;
+}
+
+/* Add animation to input-container when it appears */
+.input-container {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.types {
+  position: absolute;
+  right: 0; /* Aligns to the right corner */
+  top: 0; /* Aligns to the top */
+  height: 100%; /* Full height of the container */
+  width: 5px; /* Width of the types element */
+}
