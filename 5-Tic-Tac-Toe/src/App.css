@@ -210,15 +210,16 @@ h5 {
   .score-board {
     height: 60px;
     width: 60px;
+;
   }
 
   .score-board p {
     font-size: 30px;
+    margin-top: 10px
   }
 
   .score-name {
     font-size: 20px;
-    margin-top: 20px;
   }
 
   .reset-btn {
