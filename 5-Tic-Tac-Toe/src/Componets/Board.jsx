@@ -16,6 +16,8 @@ const Board = () => {
     newBoard[index] = isXTurn ? "X" : "O";
     setBoard(newBoard);
     setIsXTurn(!isXTurn);
+
+ 
   };
   const checkWinner = (Board) => {
     const lines = [
@@ -35,9 +37,9 @@ const Board = () => {
         return Board[a];
       }
     }
+  
     return null;
   };
-
   const winner = checkWinner(Board);
 
   useEffect(() => {
