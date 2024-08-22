@@ -1,11 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-.heading{
+.heading {
     font-weight: 800;
     font-size: 45px;
     margin: 10px;
@@ -13,27 +12,78 @@
     margin-bottom: 25px;
 }
 
-input{
+input {
     width: 100%;
     padding: 5px;
 }
 
-.todo-container{
+.todo-container {
     text-align: left;
 }
 
-.kg-row{
+.kg-row {
     margin: 10px;
 }
 
-.kg-btn{
+.kg-btn {
     min-width: 80px;
 }
 
-
-.welcome{
+.welcome {
     font-weight: 600;
     font-size: 30px;
     margin-top: 40px;
     text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 40px;
+    }
+    .welcome {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        font-size: 35px;
+    }
+    .welcome {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 30px;
+    }
+    .welcome {
+        font-size: 20px;
+    }
+    .kg-row {
+        margin: 5px;
+    }
+    .kg-btn {
+        min-width: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 25px;
+    }
+    .welcome {
+        font-size: 18px;
+    }
+    .kg-row {
+        margin: 3px;
+    }
+    .kg-btn {
+        min-width: 60px;
+    }
+    input {
+        padding: 8px;
+    }
 }
