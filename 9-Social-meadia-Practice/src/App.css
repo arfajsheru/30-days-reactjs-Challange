@@ -1,0 +1,55 @@
+.Header {
+  background-color: hotpink;
+  width: 100%;
+}
+
+.postList {
+  margin: 15px;
+}
+
+.post {
+  background-color: yellow;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.post:hover {
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.629);
+}
+
+.hashtag{
+    margin: 0px 3px;
+}
+
+.Create-post {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.conatiner-item{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #0D6FED;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #888888; 
+  border-radius: 4px; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
