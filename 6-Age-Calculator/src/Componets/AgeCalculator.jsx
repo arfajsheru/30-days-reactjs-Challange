@@ -35,7 +35,9 @@ const AgeCalculator = () => {
 
     const resetForm = () => {
         birthdateRef.current.value = '';
-        setAgeCategory('');
+        setCategoryAge("");
+        setAge(0);
+
       };
     
     
