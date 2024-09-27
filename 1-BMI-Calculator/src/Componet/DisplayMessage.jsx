@@ -1,6 +1,6 @@
 const DisplayMessage = ({bmi, message}) => {
   return (
-    <div className="center">
+    <div className="message-box">
       <h3>Your BMI is : {bmi}</h3>
       <p className="message">{message}</p>
     </div>

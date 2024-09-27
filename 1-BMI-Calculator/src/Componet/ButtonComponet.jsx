@@ -3,14 +3,13 @@ const ButtonComponet = ({BmiCalculate, reloadhandle}) => {
     <div className="Button_container">
       <button
         type="button"
-        className="btn btn-primary button-row"
         onClick={BmiCalculate}
       >
-        submit
+        Calculate Bmi
       </button>
       <button
         type="button"
-        className="btn btn-primary button-row"
+     
         onClick={ reloadhandle}
       >
         Reload

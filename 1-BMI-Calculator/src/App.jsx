@@ -36,15 +36,16 @@ function App() {
 
   return (
     <div className="container">
-      <div className="card form" style={{ width: "25rem" }}>
-        <HeaderTitle></HeaderTitle>
-
+      <div className="card_form">
+        <HeaderTitle />
         <DisplayInput setWeightTab={setWeight} setHeightTab={setHeight}></DisplayInput>
         <ButtonComponet BmiCalculate={CalculateBmi} reloadhandle={handleReload}></ButtonComponet>
-        <div className="center">
-          <h3>Your BMI is : {bmi}</h3>
+
+        <div className="message-box">
+          <h3>Your BMI is <span>{bmi}</span></h3>
           <p className="message">{message}</p>
         </div>
+        
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const DisplayInput = ({setWeightTab,setHeightTab}) => {
             type="number"
             className="form-control"
             placeholder="Enter a weight"
-            id="weight"
+      
      
             onChange={(evnet) => setWeightTab(evnet.target.value)}
           />

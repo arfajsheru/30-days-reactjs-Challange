@@ -1,24 +1,161 @@
-.form{
-  padding: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fredoka", sans-serif;
+  animation: fadeIn 0.5s ease forwards; /* Fade in animation for all elements */
 }
-.container{
-  display: flex;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start fully transparent */
+  }
+  to {
+    opacity: 1; /* End fully opaque */
+  }
+}
+
+#root {
+  background: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/magical-spring-forest-scenery-during-morning-breeze-free-photo.jpg?w=2210&quality=70');
+  background-size: cover;
+  background-repeat: repeat-y; /* Repeat the background vertically */
+  animation: scrollBackground 20s linear infinite; /* Infinite scroll animation */
+}
+
+/* Animation for infinite background scroll */
+@keyframes scrollBackground {
+  0% {
+    background-position: center 0; /* Start at the top of the image */
+  }
+  100% {
+    background-position: center 100%; /* Move to the bottom of the image */
+  }
+}
+
+.container {
+  width: 100%;
   height: 100vh;
-}
-.centerTitle{
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.Button_container{
+.card_form {
+  width: 40%;
+  padding: 20px;
+  background: linear-gradient(#ffffff, #ffe3fb);
+  border: 3px solid #43b0f1;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  animation: slideIn 0.5s ease forwards; /* Slide in animation for card_form */
 }
-.button-row{
-  margin: 10px;
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px); /* Slide from below */
+    opacity: 0; /* Start transparent */
+  }
+  to {
+    transform: translateY(0); /* End at original position */
+    opacity: 1; /* End fully opaque */
+  }
 }
-.center{
+
+.title {
+  font-weight: 700; /* Bold and strong */
+  text-align: center; /* Center alignment for strong presence */
+  font-size: 28px; /* Larger font for impact */
+  margin-bottom: 25px; /* Balanced spacing below */
+  text-transform: uppercase; /* All caps for dominance */
+  font-family: 'Oswald', sans-serif; /* Bold and stylish font */
+  color: #222; /* Deep, dark gray for intensity */
+  background: linear-gradient(90deg, #43b0f1, #00202e); /* Vibrant gradient for style */
+  background-clip: text; /* Applies gradient to the text */
+  -webkit-background-clip: text; /* For WebKit browsers */
+  color: transparent; /* Hide default text color */
+  letter-spacing: 2px; /* Extra space between letters for dramatic effect */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Strong shadow for depth */
+  animation: glow 1.5s infinite alternate; /* Glow animation for a dynamic effect */
+}
+
+.mb-3 label {
+  font-size: 20px;
+  font-weight: 500;
+  color: #43b0f1;
+  animation: fadeIn 0.5s ease forwards; /* Animation for label */
+}
+
+.mb-3 input {
+  width: 100%;
+  outline: none;
+  border: 2px solid #ccc; /* Lighter border for modern look */
+  padding: 10px 15px; /* Comfortable padding for better UX */
+  border-radius: 3px; /* Rounded corners */
+  font-size: 16px; /* Adequate font size for readability */
+  background-color: #f9f9f9; /* Soft background color */
+  transition: all 0.3s ease; /* Smooth transition for interactions */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  animation: fadeIn 0.5s ease forwards; /* Animation for input */
+}
+
+.mb-3 input:focus { /* Purple border on focus for highlighting */
+  background-color: #ffffff; /* White background when focused */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* More intense shadow on focus */
+}
+
+.mb-3 input:hover { /* Slight border color change on hover */
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15); /* Slight shadow enhancement on hover */
+}
+
+.Button_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.Button_container button {
+  width: 100%;
+  background: linear-gradient(90deg, #a7d5f2, #efc6ff);
+  border: none;
+  font-size: 20px;
   text-align: center;
+  text-transform: capitalize;
+  height: 40px;
+  font-weight: 500;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  animation: fadeIn 0.5s ease forwards; /* Animation for buttons */
+}
+
+.Button_container button:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.message-box {
+  height: auto;
+  padding: 10px;
+  background-color: transparent;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  color:#43b0f1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px, 0 0 10px #43b0f1; /* Added shadow color */
+  animation: fadeIn 0.5s ease forwards; /* Animation for message box */
+}
+.message-box span{
+  color: #656565;  
+}
+
+.message{
+  font-size: 24px;
+  font-weight: normal;
+
 }

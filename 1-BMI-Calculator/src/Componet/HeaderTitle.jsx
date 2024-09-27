@@ -1,5 +1,5 @@
 const HeaderTitle = () => {
-    return <h5 className="modal-title centerTitle">Modal title</h5>
+    return <h1 className="title">Bmi calculator</h1>
 }
 
 export default HeaderTitle;
