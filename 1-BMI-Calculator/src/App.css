@@ -68,19 +68,18 @@
 
 .title {
   font-weight: 700; /* Bold and strong */
-  text-align: center; /* Center alignment for strong presence */
+  text-align: center;
   font-size: 28px; /* Larger font for impact */
   margin-bottom: 25px; /* Balanced spacing below */
-  text-transform: uppercase; /* All caps for dominance */
+  text-transform: uppercase; 
   font-family: 'Oswald', sans-serif; /* Bold and stylish font */
   color: #222; /* Deep, dark gray for intensity */
   background: linear-gradient(90deg, #43b0f1, #00202e); /* Vibrant gradient for style */
-  background-clip: text; /* Applies gradient to the text */
-  -webkit-background-clip: text; /* For WebKit browsers */
-  color: transparent; /* Hide default text color */
-  letter-spacing: 2px; /* Extra space between letters for dramatic effect */
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Strong shadow for depth */
-  animation: glow 1.5s infinite alternate; /* Glow animation for a dynamic effect */
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  letter-spacing: 2px; 
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); 
+  animation: glow 1.5s infinite alternate; 
 }
 
 .mb-3 label {

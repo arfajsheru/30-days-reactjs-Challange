@@ -3,6 +3,7 @@ import "./App.css";
 import HeaderTitle from "./Componet/HeaderTitle";
 import DisplayInput from "./Componet/DisplayInput";
 import ButtonComponet from "./Componet/ButtonComponet";
+import DisplayMessage from "./Componet/DisplayMessage";
 
 function App() {
   const [weight, setWeight] = useState(0);
@@ -40,11 +41,11 @@ function App() {
         <HeaderTitle />
         <DisplayInput setWeightTab={setWeight} setHeightTab={setHeight}></DisplayInput>
         <ButtonComponet BmiCalculate={CalculateBmi} reloadhandle={handleReload}></ButtonComponet>
-
-        <div className="message-box">
+        <DisplayMessage bmi={bmi} message={message} />
+        {/* <div className="message-box">
           <h3>Your BMI is <span>{bmi}</span></h3>
           <p className="message">{message}</p>
-        </div>
+        </div> */}
         
       </div>
     </div>
